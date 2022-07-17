@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+
+@use 'sass:meta';
+
+@include meta.load-css('tippy.js/dist/tippy.css');
+@include meta.load-css('tippy.js/themes/light.css');
+@include meta.load-css('tippy.js/animations/scale.css');
