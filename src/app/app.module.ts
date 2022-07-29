@@ -8,16 +8,15 @@ import { AppComponent } from './app.component';
   declarations: [
     AppComponent
   ],
-  imports: [TippyModule.forRoot({
+  imports: [
+    BrowserModule,
+    TippyModule.forRoot({
     defaultVariation: 'tooltip',
     variations: {
       tooltip: tooltipVariation,
       popper: popperVariation,
     }
   })],
-  imports: [
-    BrowserModule
-  ],
   providers: [],
   bootstrap: [AppComponent]
 })
